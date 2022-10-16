@@ -9,26 +9,49 @@ body {
   margin: 0;
 }
 
+#nav {
+  width: 100%;
+    height: 2rem;
+    background-color: #ffffff;
+}
+#nav a { 
+  font-size: 80%
+}
+a { text-decoration: none;
+padding-right: 1rem;
+}
+
 #titleBanner {
-  position: relative;
+    position: relative;
   width: 100%;
   height: 50vh;
-  background-image: url(https://images.unsplash.com/photo-1590137876181-2a5a7e340308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+  background-image: none;  /*url(https://images.unsplash.com/photo-1590137876181-2a5a7e340308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80); */
   background-size: cover;
   background-position: center center;
 }
 
 #titleBanner h1 {
-  font-family: 'Cardo', serif;
+ font-family: 'Cardo', serif;
   color: whitesmoke;
-  font-size: 40px;
-  top: 100px;
+  text-transform: uppercase;
+  font-size: 500%;
   padding: 0;
   margin: 0 0 2vw 2vw;
-  position: relative;
-  text-align: center center;
-  text-transform: uppercase;
-  line-height: 100%;
+  position: absolute;
+  bottom: 3vw;
+  left: 0;
+  line-height: 80%;
+ 
+}
+
+#titleBanner h1.tp {
+	font-size: 250%;
+}
+#titleBanner h3 {
+  position: absolute ;
+  bottom: 0;
+  left: 0;
+  color: white; 
 }
 
 #recipeColumns {
@@ -66,7 +89,7 @@ ul {
   width: 50%;
 }
 
-//bruh------------------------------------------media orientation
+/*bruh------------------------------------------media orientation */
 @media (orientation: portrait) {
   #recipeColumns {
     display: inline-block;
@@ -86,9 +109,23 @@ ul {
   #recipeColumns {
     display: inline-block;
   }
+ 
+}
+#recipeColumns div#ingredients { flex-basis: 28%; }
+#recipeColumns div#equipment { flex-basis: 20%; }
+#recipeColumns div#directions { flex-basis: 50%; }
+
+
+/* reduce the left-hand padding of the list items */
+#recipeColumns ul,
+#recipeColumns ol {
+  padding-left: 1.1em;
 }
 
-//bruhfr-----------------------------------------------Js stuff
+ul, ol {
+	display: block;
+}
+/*bruhfr-----------------------------------------------Js stuff*/
 
 #titleBanner h1.tp {
   font-size: 50px;

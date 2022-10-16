@@ -1,4 +1,4 @@
-// JavaScript for TP6
+// JavaScript for TP7
 
 // function to load a file from the URL "fromFile" into the object identified by "whereTo"
 function loadFileInto(fromFile, whereTo) {
@@ -29,7 +29,7 @@ function loadFileInto(fromFile, whereTo) {
 
 
 
-window.onload = function() {
+/*window.onload = function() {
 	
 	loadFileInto("ingredients.html", "#ingredients ul");
 	loadFileInto("equipment.html", "#equipment ul");
@@ -55,14 +55,11 @@ window.onload = function() {
 		this.classList.toggle("tpShow");
 	}
 	
-	setTimeout(function() {
-		document.querySelector("#recipeColumns #ingredients ul").innerHTML += "<li>A hunger for chocolate</li>";
-	}, 100);
 	
 
 	
 	
-} // end window.onload
+} // end window.onload*/
 
 
 
