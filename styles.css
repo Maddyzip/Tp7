@@ -44,9 +44,7 @@ padding-right: 1rem;
  
 }
 
-#titleBanner h1.tp {
-	font-size: 250%;
-}
+
 #titleBanner h3 {
   position: absolute ;
   bottom: 0;
@@ -90,25 +88,20 @@ ul {
 }
 
 /*bruh------------------------------------------media orientation */
-@media (orientation: portrait) {
-  #recipeColumns {
-    display: inline-block;
-  }
-}
-
 @media screen and (orientation: portrait) and (max-width: 575px) {
+  
+  /* make the photo almost full-screen */
   #titleBanner {
-    height: 25vh;
-    background-size: fixed;
+    height: 98vh;
   }
   
+  /* make the title text huge */
   #titleBanner h1 {
-  font-size: 60px;
-}
-  
-  #recipeColumns {
-    display: inline-block;
+    font-size: 900%;
+    margin: 0 0 3vh 3vh;
   }
+  
+}
  
 }
 #recipeColumns div#ingredients { flex-basis: 28%; }
@@ -135,14 +128,3 @@ ul, ol {
   color: #000000;
 }
 
-#recipeColumns #ingredients ul,
-#recipeColumns #equipment ul,
-#recipeColumns #directions ol {
-  display: none;
-}
-
-#recipeColumns #ingredients.tpShow ul,
-#recipeColumns #equipment.tpShow ul,
-#recipeColumns #directions.tpShow ol {
-  display: block;
-}
