@@ -75,6 +75,14 @@ window.onload = function() {
 	document.querySelector("#firstRecipe").onclick =function() {
 		GoodOldfashionedPancakes.displayRecipe();
 	}
+  
+  document.querySelector("#secondRecipe").onclick = function() {
+		MushroomSalsaChili.displayRecipe();
+	}
+  
+  document.querySelector("#thirdRecipe").onclick = function() {
+		WineMustard.displayRecipe();
+	}
 
   
 }
