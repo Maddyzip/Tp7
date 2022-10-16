@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+ font-family: times new Roman;
+  background-color: #e6e2d3;
+  padding: 0;
+  margin: 0;
+}
+
+#titleBanner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url(https://images.unsplash.com/photo-1590137876181-2a5a7e340308?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+  background-size: cover;
+  background-position: center center;
+}
+
+#titleBanner h1 {
+  font-family: 'Cardo', serif;
+  color: whitesmoke;
+  font-size: 40px;
+  top: 100px;
+  padding: 0;
+  margin: 0 0 2vw 2vw;
+  position: relative;
+  text-align: center center;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+#recipeColumns {
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6vh;
+}
+
+#recipeColumns ul,
+ol {
+  margin-top: 2px;
+}
+
+ul {
+  margin-top: 2px;
+  list-style-type: square;
+}
+
+#recipeColumns h4 {
+  color: #625750;
+  font-size: 30px;
+  margin: 0;
+  font-family: 'Cardo', serif;;
+}
+
+.makeblue {color: #87bdd8; }
+ .makeBlue:hover {color: #87bdd8; }
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+//bruh------------------------------------------media orientation
+@media (orientation: portrait) {
+  #recipeColumns {
+    display: inline-block;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 575px) {
+  #titleBanner {
+    height: 25vh;
+    background-size: fixed;
+  }
+  
+  #titleBanner h1 {
+  font-size: 60px;
+}
+  
+  #recipeColumns {
+    display: inline-block;
+  }
+}
+
+//bruhfr-----------------------------------------------Js stuff
+
+#titleBanner h1.tp {
+  font-size: 50px;
+}
+
+#titleBanner h1.black {
+  color: #000000;
+}
+
+#recipeColumns #ingredients ul,
+#recipeColumns #equipment ul,
+#recipeColumns #directions ol {
+  display: none;
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol {
+  display: block;
+}
